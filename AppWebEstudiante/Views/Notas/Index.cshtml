@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<center><h2>BIENVENIDO</h2></center>
+<center><h3>BIENVENIDO</h3></center>
 
 @using (Html.BeginForm("Resultado", "Notas", FormMethod.Post))
 {
@@ -13,34 +13,34 @@
         <center>
             <div class="form-group">
                 <label>Nombre Estudiante:</label>
-                <input step ="any" type="text" name="nombre" required placeholder="Escribe tu nombre" />
+                <input  type="text" name="nombre" required placeholder="Escribe tu nombre" />
             </div>
 
             <div class="form-group">
                 <label>Laboratorio I:</label>
-                <input type="text" name="notaLab1" required placeholder="Nota de Laboratorio 1" />
+                <input type="text" name="notaLab1" required placeholder="Laboratorio I" />
             </div>
             <div class="form-group">
                 <label>Laboratorio II:</label>
-                <input type="text" name="notaLab2" required placeholder="Laboratorio 2" />
+                <input type="text" name="notaLab2" required placeholder="Laboratorio II" />
             </div>
             <div class="form-group">
                 <label>Laboratorio III:</label>
-                <input type="text" name="notaLab3" required placeholder="Laboratorio 3" />
+                <input type="text" name="notaLab3" required placeholder="Laboratorio III" />
             </div>
             <div class="form-group">
                 <label>Parcial I :</label>
-                <input   type="text" name="notaPar1" required placeholder="Nota Parcial 1">
+                <input type="text" name="notaPar1" required placeholder="Parcial I">
             </div>
             <div class="form-group">
                 <label>Parcial II :</label>
-                <input type="text" name="notaPar2" required placeholder="Nota Parcial 2">
+                <input type="text" name="notaPar2" required placeholder="Parcial II">
             </div>
             <div class="form-group">
                 <label>Parcial III :</label>
-                <input  type="text" name="notaPar3" required placeholder="Nota Parcial 3">
+                <input type="text" name="notaPar3" required placeholder="Parcial III">
             </div>
-            <button  type="submit" button class="btn btn-success">Ingresar</button>
+            <button type="submit" button class="btn btn-success">Ingresar</button>
         </center>
     </div>
 
