@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Resultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resultado</h2>
+@*Nombre como de botón/ nombre *@
+<h3>@Html.ActionLink("Sig Pag", "Historial")</h3>
+<table class="table table-bordered border-primary">
+    <th>
+        Nombre:
+    </th>
+
+    <th>
+        Período 1 :
+    </th>
+    <th>
+        Período 2:
+    </th>
+    <th>
+        Período 3 :
+    </th>
+    <th>
+        Promedio final:
+    </th>
+    <tbody>
+
+        <tr>
+            <td>@ViewBag.nombre</td>
+            <td>@ViewBag.prom1</td>
+            <td>@ViewBag.prom2</td>
+            <td>@ViewBag.prom3</td>
+            <td>@ViewBag.pFinal</td>
+
+        </tr>
+
+    </tbody>
+</table>

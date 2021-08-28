@@ -1,0 +1,56 @@
+﻿@model List<AppWebEstudiante.Models.TblNotasEstudiante>
+@{
+    ViewBag.Title = "Historial";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Historial</h2>
+
+<table class="table table-dark table-hover">
+
+    <thead>
+    <th>
+        Id_Estudiante
+    </th>
+    <th>
+        Nombre
+    </th>
+    <th>
+        Laboratorio I
+    </th>
+    <th>
+        Laboratorio II
+    </th>
+    <th>
+        Laboratorio III
+    </th>
+    <th>
+        Parcial I
+    </th>
+    <th>
+        Parcial II
+    </th>
+    <th>
+        Parcial III
+    </th>
+
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id_Estudiante</td>
+            <td>@item.Nombre</td>
+            <td>@item.Lab1</td>
+            <td>@item.Lab2</td>
+            <td>@item.Lab3</td>
+            <td>@item.Par1</td>
+            <td>@item.Par2</td>
+            <td>@item.Par3</td>
+        </tr>
+        }
+
+    </tbody>
+</table>
+
